@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Login</title>
+</head>
+<body>
+    <section>
+        <div class="box">
+
+            <div class="form">
+                <img src="imges/_user.jpg" class="user" alt="">
+                <h2>Welcome Back</h2>
+                <form class="" action="index.html" method="post" enctype="multipart/form-data">
+                    <!-- {% csrf_token %} -->
+                    <div class="inputBx">
+                        <input type="text" name="username" placeholder="Username" id="username" oninput="validation()" required autofocus>
+                        <img src="imges/user.png" alt="">
+                    </div>
+                    <div class="inputBx">
+                        <input type="password" name="passward" id="password" placeholder="Passward" oninput="validation()" required>
+                        <img src="imges/lock.png" alt="">
+                    </div>
+                    <label class="remeber"><input type="checkbox"> Remember Me</label>
+                    <div class="inputBx">
+                        <input type="submit" name="submit" value="Login" id="submit" disabled>
+                    </div>
+                </form>
+            
+                <p>Need for a <a href="#">Account</a>? </p>
+
+            </div>
+
+        </div>
+    </section>
+    <script>
+        function validation() {
+    let username = document.getElementById("username").value;
+    let pass = document.getElementById("password").value;
+    if (username != "" && pass != "") {
+        document.getElementById("submit").disabled = false;
+    } else {
+        document.getElementById("submit").disabled = true;
+    }
+}
+    </script>
+
+</body>
+</html>
