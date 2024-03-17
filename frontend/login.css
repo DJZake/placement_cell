@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
 }
 
 section {
@@ -10,7 +11,7 @@ section {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient( -25deg, #03a9f4 0%, #3a78b7 50%, #262626 50%, #607d8d 100%);
+    background: linear-gradient( -25deg, #24485a 0%, #06121dab 50%, #262626 50%, #252525 100%);
     backdrop-filter: hue-rotate(120deg);
     animation: animate 10s ease-in infinite;
 }
@@ -34,7 +35,7 @@ section {
     transform: translateY(-800px);
     justify-content: center;
     align-items: center;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(50, 52, 148, 0.233);
     border-radius: 6px;
     box-shadow: 0 5px 35px rgba(0, 0, 0, 0.2);
     animation: appare 1.5s linear;
@@ -183,7 +184,7 @@ section {
     display: block;
     position: relative;
     top: -70px;
-    filter: grayscale(1);
+    /* filter: grayscale(1); */
     margin: auto;
     box-shadow: 0 5px 35px rgba(0, 0, 0, 0.2);
     border: 5px solid rgba(255, 255, 255, 0.1);
