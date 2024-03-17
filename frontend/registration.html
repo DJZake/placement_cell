@@ -5,27 +5,29 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
+            background-color: #020202;
         }
         
         h1 {
             text-align: center;
-            color: #333;
+            color: #fdf2f2;
         }
         
         form {
-            width: 400px;
+            width: 100%;
+            max-width: 400px;
             margin: 0 auto;
-            background-color: #fff;
+            background-color: #1d1d64;
             padding: 20px;
             border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(255, 251, 251, 0.1);
+            animation: slideIn 1s ease-in-out;
         }
         
         label {
             display: block;
             margin-bottom: 10px;
-            color: #333;
+            color: #fff4f4;
         }
         
         input[type="text"],
@@ -42,14 +44,34 @@
             width: 100%;
             padding: 10px;
             background-color: #4CAF50;
-            color: #fff;
+            color: #131111;
             border: none;
             border-radius: 4px;
             cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
         }
         
         input[type="submit"]:hover {
             background-color: #45a049;
+        }
+        
+        @media (max-width: 600px) {
+            form {
+                padding: 10px;
+            }
+            
+            input[type="submit"] {
+                margin-top: 10px;
+            }
+        }
+        
+        @keyframes slideIn {
+            0% {
+                transform: translateY(-100%);
+            }
+            100% {
+                transform: translateY(0);
+            }
         }
     </style>
 </head>
