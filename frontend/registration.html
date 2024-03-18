@@ -5,19 +5,27 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #020202;
+            /* background-color: #020202; */
+            min-height: 100vh;
+            background: linear-gradient( -25deg, #24485a 0%, #06121dab 50%, #262626 50%, #000000 100%);
+            /* backdrop-filter: hue-rotate(120deg); */
+           /* animation: animate 10s ease-in infinite; */
         }
         
         h1 {
             text-align: center;
+            position: relative;
+            left: -100%;
             color: #fdf2f2;
+            animation: slideh1 2s forwards;
+            /* margin-top: 10%; */
         }
         
         form {
             width: 100%;
             max-width: 400px;
             margin: 0 auto;
-            background-color: #1d1d64;
+            background-color: #2a2aa89f;
             padding: 20px;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(255, 251, 251, 0.1);
@@ -65,6 +73,15 @@
             }
         }
         
+        @keyframes slideh1 {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 0;
+    }
+    }
+
         @keyframes slideIn {
             0% {
                 transform: translateY(-100%);
@@ -90,7 +107,33 @@
         
         <label for="confirm_password">Confirm Password:</label>
         <input type="password" id="confirm_password" name="confirm_password" required><br><br>
-        
+
+        <label for="resume">Resume:</label>
+        <input type="file" id="resume" name="resume" accept=".pdf"><br><br>
+
+        <label for="resume">Profile Picture:</label>
+        <input type="file" id="Profile Picture" name="Profile Picture" accept=".pdf"><br><br>
+
+        <label for="CGPA">CGPA</label>
+        <input type="CGPA" id="CGPA" name="CGPA" required><br><br>
+
+        <label for="password">University Registration Number</label>
+        <input type="roll" id="roll" name="roll" required><br><br>
+
+        <label for="Stream">Stream:</label>
+        <input type="stream" id="stream" name="stream" required><br><br>
+        <label for="cars">Select College:</label>
+        <select id="cars">
+        <option value="CEM">College of engineering munnar </option>
+        <option value="TH">Toc H College of engineering</option>
+        <option value="CET">CET</option>
+        <option value="other">Other</option>
+        <option value="audi" selected>University</option>
+        </select>
+        <br><br>
+        <label for="other">Other:</label>
+        <input type="other" id="other" name="other" required><br><br>
+        <!-- submit button -->
         <input type="submit" value="Register">
     </form>
 </body>
