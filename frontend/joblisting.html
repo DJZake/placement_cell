@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lobster&display=swap" rel="stylesheet">
     <title>Job listing</title>
     <link rel="stylesheet" href="joblisting.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -17,10 +20,10 @@
               </button>
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  <a class="nav-link" href="#">Features</a>
-                  <a class="nav-link" href="#">Pricing</a>
-                  <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                  <a  class="nav-link" href="#">Profile</a>
+                  <a class="nav-link active" aria-current="page" href="#">Company</a>
+                  <a class="nav-link" href="#">About us</a>
+                  <button type="button" class="btn btn-outline-danger">Logut</button>
                 </div>
               </div>
             </div>
@@ -73,6 +76,57 @@
 <!-- footer -->
 <footer>
 
+    <div class="container__footer">
+        <div class="box__footer">
+            <div class="logo">
+                <img src="Images/logo-magtimus.png" alt="">
+            </div>
+            <div class="terms">
+                <p>Where aspirations meets opportunities</p>
+            </div>
+        </div>
+        <div class="box__footer">
+            <h2>Services</h2>
+            <a href="#">Home</a>
+            <a href="#">Register</a>
+            <a href="#">Login</a>
+            <a href="#">Location</a>
+        </div>
+
+        <div class="box__footer">
+            <h2>Address</h2>
+            <pre>College of Engineering Munnar</pre>
+            <a href="#"></a>
+            <a href="#">Procesos</a>
+            <a href="#">Servicios</a>              
+        </div>
+
+        <div class="box__footer">
+            <h2>Follow Us</h2>
+            <a href="#"> <i class="fab fa-facebook-square"></i> Facebook</a>
+            <a href="#"><i class="fab fa-twitter-square"></i> Twitter</a>
+            <a href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
+            <a href="#"><i class="fab fa-instagram-square"></i> Instagram</a>
+        </div>
+
+    </div>
+
+    <div class="box__copyright">
+        <hr>
+        <p>All rights are reserved © 2024 <b>Placify</b></p>
+    </div>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script>
+    const triggerTabList = document.querySelectorAll('#myTab button')
+triggerTabList.forEach(triggerEl => {
+  const tabTrigger = new bootstrap.Tab(triggerEl)
+
+  triggerEl.addEventListener('click', event => {
+    event.preventDefault()
+    tabTrigger.show()
+  })
+})
+</script>
 </body>
 </html>
