@@ -1,0 +1,126 @@
+.w-100{
+    height: 700px !important;
+}
+
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+h3{
+    padding: 2%;
+}
+h4{
+    padding: 2%;
+}
+
+
+/* navbar */
+.navbar-collapse {
+    margin: 20px;
+    padding: 15px;
+}
+
+.navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+    background-color: rgba(90, 89, 85, 0.508);
+    margin-top: -.4%;
+}
+.navbar-expand-lg .navbar-collapse {
+    justify-content: end;
+}
+
+.navbar-brand {
+    font-size: 40px !important;
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* footer */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+footer{
+    width: 100%;
+    /* padding: 10px 0px; */
+    background-image: url(../Images/background-footer.svg);
+    background-size: cover;
+    
+   
+}
+
+.container__footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.box__footer{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.box__footer .logo img{
+    width: 180px;
+}
+
+.box__footer .terms{
+    max-width: 350px;
+    margin-top: 20px;
+    font-weight: 500;
+    color: #7a7a7a;
+    font-size: 18px;
+}
+
+.box__footer h2{
+    margin-bottom: 30px;
+    color: #343434;
+    font-weight: 700;
+}
+
+.box__footer a{
+    margin-top: 10px;
+    color: #7a7a7a;
+    font-weight: 600;
+}
+.box__footer pre{
+    margin-top: 10px;
+    color: #7a7a7a;
+    font-weight: 600;
+}
+
+.box__footer a:hover{
+    opacity: 0.8;
+}
+
+.box__footer a .fab{
+    font-size: 20px;
+}
+
+.box__copyright{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.box__copyright p{
+    margin-top: 20px;
+    color: #7a7a7a;
+}
+
+.box__copyright hr{
+    border: none;
+    height: 1px;
+    background-color: #6c6c6c;
+}
+footer{
+    background-color: #6262622f;
+}
+
+h{
+    font-size: 25px;
+    font-weight: 500;
+    color: #343434;
+}
