@@ -25,22 +25,40 @@
 
 span{
     color: brown !important;
+    font: 1em sans-serif;
     
 }
 .profile{
     display: table;
-    float: right;
+    /* float: right; */
     padding: 10px;
+    margin-left: 35%;
+    margin-top: -25%;
+    
 }
 ul{
     display: table;
+    
 }
 li{
     display: table;
     padding: 10px;
+    font-size: larger;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+.update{
+    margin-left: 55%;
+    /* margin-top: -30%; */
+}
 
+.status{
+    display: table ;
+    margin-left: 63%;
+    margin-top: -17%;
+    margin-bottom: 15%;
+}
 
 
 /* footer */
