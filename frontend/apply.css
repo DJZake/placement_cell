@@ -1,0 +1,22 @@
+img{
+    width: 25%;
+    display: inline;
+    margin: 0%;
+    padding: 0%;
+}
+
+p{
+    text-align: justify;
+    padding: 1%;
+    justify-content: space-between;
+    justify-content: space-around;
+}
+
+h2{
+    text-align: center;
+    font: 2.5em sans-serif;
+}
+
+.btn-success{
+    margin-left: 47%;
+}
