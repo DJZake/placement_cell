@@ -1,0 +1,375 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*to set font style*/
+
+input{
+    font-family: "Poppins", sans-serif;
+}
+/*background style and align item to center*/
+main{
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg,#fc0d0d,#fb0553,#050df8,#09e5f9,#16fe54,#fcf80d);
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+    margin-top: 2.5rem;
+}
+/*to make box and box style*/
+.box{
+    position: relative;
+    width: 100%;
+    max-width: 1020px;
+    height: 640px;
+    background-color: #fff;
+    border-radius: 3.3rem;
+    box-shadow: 0 60px 40px -30px rgba(0, 0, 0, 0.27);
+}
+/*to make and bring inner box to center*/
+.inner-box{
+    position: absolute;
+    width: calc(100% - 4.1rem);
+    height: calc(100% - 4.1rem);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+}
+/*left login box
+add color to see*/
+.forms-wrap{
+    position: absolute;
+    height: 100%;
+    width: 45%;
+    top: 0;
+    left: 0;
+}
+/*to make slider box and colour
+to adjust the space between items
+space from bottom*/
+.carousel{
+    position: absolute;
+    height: 100%;
+    width: 55%;
+    top: 0;
+    left: 45%;
+    background-color:#ffe0d2;
+    border-radius: 2rem;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    padding-bottom: 2rem;
+    overflow: hidden;
+}
+/*box cotaining login to paragraph end and making contents to center and  to arrage elements
+add color to see*/
+form{
+    max-width: 260px;
+    width: 100%;
+    margin:  0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+/*if there is logo*/
+.logo{
+    display: flex;
+    align-items: center;
+}
+/*to set logo size*/
+.logo img{
+    width: 27px;
+    margin: 0.3rem;
+}
+/*login heading*/
+.logo h4{
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+    margin-top: -9px;
+    letter-spacing: -0.5px;
+    color: #151111;
+}
+/*welcome back heading*/
+.heading h2{
+    font-family: "Poppins", sans-serif;
+    font-size: 2.1rem;
+    font-weight: 600;
+    color: #151111;
+}
+/*not registered yet heading and to make signup in one line*/
+.heading h6{
+    font-family: "Poppins", sans-serif;
+    color: #bababa;
+    font-weight: 400;
+    font-size: .75rem;
+    display: inline;
+}
+/*sign up*/
+.toggle{
+    font-family: "Poppins", sans-serif;
+    color: #4070f4;
+    text-decoration: none;
+    font-size: 0.75rem;
+    font-weight: 500;
+    transition: 0.3s;
+}
+/*hover effect for signup*/
+.toggle:hover{
+    color: #4070f4;
+    text-decoration: underline;
+}
+/*to make space between input boxes*/
+.input-wrap{
+    position: relative;
+    height: 37px;
+    margin-bottom: 2rem;
+}
+/*tomake label inside input field and to make input box bigger
+to make the input field box outline none*/
+.input-field{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #bbb;
+    padding: 0;
+    font-size: .95rem;
+    color: #151111;
+    transition: 0.4s;
+}
+label{
+    font-family: "Poppins", sans-serif;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: .95rem;
+    color: #bbb;
+    pointer-events: none;
+    transition: 0.4s;
+}
+/*to make color line black when active*/
+.input-field.active{
+    border-bottom-color: #151111;
+}
+/*to make label to top when active*/
+.input-field.input-field.active + label{
+    font-size: 0.75rem;
+    top: -2px;
+}
+/*sign in button and space below button*/
+.sign-btn{
+    font-family: "Poppins", sans-serif;
+    display: inline-block;
+    width: 100%;
+    height: 43px;
+    background-color: #151111;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.8rem;
+    font-size: 0.8rem;
+    margin-bottom: 2rem;
+    transition: 0.3s;
+}
+/*to make hover effect to button*/
+.sign-btn:hover{
+    background-color: #4070f4;
+}
+/*forgotten your password text*/
+.text{
+    font-family: "Poppins", sans-serif;
+    color: #bbb;
+    font-size: 0.7rem;
+}
+/*forgot passsword link*/
+.text a{
+    font-family: "Poppins", sans-serif;
+    color: #4070f4;
+    transition: 0.3s;
+    text-decoration: none;
+    font-weight: 400;
+}
+/*to make hover effect to link*/
+.text a:hover{
+    text-decoration: underline;
+    color: #4070f4;
+}
+/*to bring image one over other*/
+.images-wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+/*to align images and fade effect*/
+.image{
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    opacity: 0;
+    border-radius: 2rem;
+    transition: opacity 0.3s, transform 0.5s;
+}
+/*to make seperate animation for different slides*/
+.img-1{
+    transform: translate(0, -50px);
+}
+.img-2{
+    transform: scale(0.4, 0.5);
+}
+.img-3{
+    transform: scale(0.3) rotate(-20deg);
+}
+/*to make one image active*/
+.image.show{
+    opacity: 1;
+    transform: none;
+}
+/*to bring text to center and to bring bullets to center
+to give colour to see*/
+.text-slider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+/*to display only one text
+space between text and dots
+to give colour to see*/
+.text-wrap{
+    max-height: 2.2rem;
+    overflow: hidden;
+    margin-bottom: 2.5rem;
+}
+/*align text to center and to move first line up*/
+.text-group{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transform: translateY(0);
+    transition: 0.5s;
+}
+/*to align text to center of box and font size*/
+.text-group h2{
+    font-family: "Poppins", sans-serif;
+    line-height: 2.2rem;
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+/*to make space for dots
+to align bullets
+to give colour to see*/
+.bullets{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*bullets color and spec
+space between bullets*/
+.bullets span{
+    display: block;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #aaa;
+    margin: 0 0.25rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+/*to make active bullet*/
+.bullets span.active{
+    width: 1.1rem;
+    background-color: #151111;
+    border-radius: 1rem;
+}
+/*to make responsive*/
+@media (max-width: 850px) {
+    .box{
+        height: auto;
+        max-width: 550px;
+        overflow: hidden;
+    }
+    .inner-box{
+        position: static;
+        transform: none;
+        width: revert;
+        height: revert;
+        padding: 2rem;
+    }
+    .forms-wrap{
+        position: revert;
+        width: 100%;
+        height: auto;
+    }
+    form{
+        max-width: revert;
+        padding: 1.5rem 2.5rem 2rem;
+    }
+    .heading{
+        margin: 2rem 0;
+    }
+    
+    .carousel{
+        position: revert;
+        height: auto;
+        width: 100%;
+        padding: 3rem 2rem;
+        display: flex;
+    }
+    .images-wrapper{
+        display: none;
+    }
+    .text-slider{
+        width: 100%;
+    }
+}
+@media (max-width: 530px){
+    main{
+        padding: 1rem;
+    }
+    .box{
+        border-radius: 2rem;
+    }
+    .inner-box{
+        padding: 1rem;
+    }
+    .carousel{
+        padding: 1.5rem 1rem;
+        border-radius: 1.6rem;
+    }
+    .text-wrap{
+        margin-bottom: 1rem;
+    }
+    .text-group h2{
+        font-size: 1.2rem;
+    }
+    form{
+        padding: 1rem 2rem 1.5rem;
+    }
+}
+/*to make background transition*/
+@keyframes color{
+    0%{
+    background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+            background-position: 0 50%;
+    }
+}
