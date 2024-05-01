@@ -29,7 +29,7 @@ span{
 }
 .profile{
     display: table;
-    /* float: right; */
+    float: right;
     padding: 10px;
 }
 ul{
