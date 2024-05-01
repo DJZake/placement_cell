@@ -24,7 +24,7 @@
                   <a  class="nav-link active" aria-current="page" href="#">Profile</a>
                   <a class="nav-link" href="joblisting.html">Job Listing</a>
                   <a class="nav-link" href="#">About us</a>
-                  <a class="nav-link" href="#">Volenteer</a>
+                  <a class="nav-link" href="support.html">Volenteer</a>
                   <button type="button" class="btn btn-outline-danger">Logut</button>
                 </div>
               </div>
@@ -33,8 +33,22 @@
     </header>
 
     <!-- main -->
-    <main>
-        <img style="width: 30%;" src="imges/_user.jpg" alt="">
+    <main class="profile">
+        <img style="width: 30%;display: inline;" src="imges/_user.jpg" alt="">
+        <div>
+        <form action="/action_page.php">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+          </form>
+          <form action="/action_page.php">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+          </form>
+        </div>
     </main>
 
 <!-- footer -->
