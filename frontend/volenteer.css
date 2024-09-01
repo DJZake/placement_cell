@@ -1,0 +1,17 @@
+.card{
+    margin-left: 40%;
+    margin-top: 5%;
+}
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    .card{
+        margin-left: 12%;
+        margin-top: 5%;
+    }
+    
+}
