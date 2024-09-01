@@ -150,3 +150,33 @@ h{
     font-weight: 500;
     color: #343434;
 }
+
+
+
+
+/* media quweires */
+
+@media screen and (max-width: 600px) {
+
+main{
+    float: none;
+    /* display: block; */
+}
+
+    img{
+        clear: both !important;
+        float: none;
+        margin-left: 35%;
+    }
+
+    .profile {
+        margin-left: 0%;
+        margin-top: 0%;
+    }
+
+    .status {
+        margin-left: 0%;
+        margin-top: 0%;
+        margin-bottom: 0%;
+    }
+}
